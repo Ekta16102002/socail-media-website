@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Signup</title>
+<head>
+    <style >
+    
+    body
+   {
+     margin:5px; background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/HD-purple-wallpaper-image-to-use-as-background-121.jpg"); color:wheat; font-family:Brush Script MT, Helvetica,; sans-serif ;
+
+   }
+
+   #main
+   {
+     width:600px; height:600px; margin-left:auto; margin-right:auto; border-radius:5px; padding-left:10px; margin-top:100px;
+     border-top:10px double #f1f1f1; border-bottom:10px double #f1f1f1; padding-top:20px;
+   }
+
+	 <!--################################################################################################################ -->
+
+   #main table
+   {
+     font-family:"Comic Sans MS", cursive;
+   } 
+  /* css code for textbox */
+  #main .tb
+  {
+    height:30px; width:300px; border:3px solid #27a465; color:#27a465; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.8;
+  }
+
+   /* css code for button*/
+   #main .btn
+   {
+    width:100px; height:35px; outline:none;  font-weight:bold; border:0px solid #27a465; text-shadow: 0px 0.5px 0.5px #fff;	
+   opacity:0.8; border-radius: 2px; font-weight: 800; color: #27a465; letter-spacing: 1px; font-size:20px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+   }
+  
+   #main .btn:hover
+   {
+    background-color:#27a465; outline:none;  border-radius: 2px; color:black; border:4px solid #27a465;
+   }
+   
+    
+    </style>
+<script>
+    
+        
+    function login()
+	{
+		var uname = document.getElementById("email").value;
+		var pwd = document.getElementById("pwd1").value;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(uname =='')
+		{
+			alert("please enter email id.");
+		}
+		else if(pwd=='')
+		{
+        	alert("enter the phoneNumber");
+		}
+		else if(!filter.test(uname))
+		{                                                                                         
+			alert("Enter valid email id.");
+		}
+		else if(pwd.length < 10 || pwd.length > 10)
+		{
+			alert(" Phonenumber should be 10 digits.");
+		}
+
+		else
+		{
+	alert('Thank You for Login & You are Redirecting to home page');
+  //Redirecting to other page or webste code or you can set your own html page.
+       window.location = "https://cdn110.picsart.com/217471783002202.gif?to=min&r=640";
+			}
+	}
+	//Reset Inputfield code.
+	function clearFunc()
+	{
+	
+		document.getElementById("email").value="";
+		document.getElementById("pwd1").value="";
+	}
+    
+    </script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		@viewport {
+		width: device-width;
+		}
+		</style >
+		
+    </head>
+
+
+	<body>
+		<!--<form action="connect.php" method="post">-->
+	<!-- Main div code -->
+
+	<div id="main">
+	<div class="h-tag">
+	<h1 style="color: wheat;" align="center">Signup!</b></h1>
+	</div>
+
+	<!-- Login box -->
+
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0" >
+		<tr>
+			<td><b>Enter Firstname :</b></td>
+			<td><input type="text" placeholder="Enter Firstname here" id="Firstname" class="tb" name="Firstname"/></td>
+			</tr>
+			<tr>
+				<td><b>Enter lastname :</b></td>
+				<td><input type="text" placeholder="Enter lastname here" id="lastname" class="tb" name="lastname"/></td>
+				</tr>
+	<tr>
+	<td><b>Enter Email ID :</b></td>
+	<td><input type="text" placeholder="Enter email id here" id="email" class="tb" name="email"/></td>
+	</tr>
+
+	<tr>
+		<td>
+			<h4 >Gender: </h4>
+		</td>
+		<td>
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+			value="m" />
+		<label class="form-check-label" for="femaleGender">Female</label>
+
+
+	
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+			value="f" />
+		<label class="form-check-label" for="maleGender">Male</label>
+	
+
+	
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+			value="o" />
+		<label class="form-check-label" for="otherGender">Other</label>
+	
+		</td>
+	</tr>
+	
+<tr>
+	<td>
+		<h4 >Select Country: </h4>
+	</td>
+	<td><select class="select">
+	  <option name="sel" value="1">Country</option
+		<option name="sel" value="2">India</option>
+		<option name="sel" value="3">South Korea</option>
+		<option name="sel"value="4">USA</option>
+		<option name="sel"value="5">UK</option>
+		<option name="sel"value="6">Russia</option>
+		<option name="sel" value="7">China</option>
+	</select></td>
+</tr>
+		
+
+	
+	<tr>
+	<td ><b>Enter phone number:</b></td>
+	<td><input type="pincode" placeholder="Enter number here" id="pwd1" class="tb" name="pwd"/></td>
+	</tr>
+	<!--#########################################################-->
+	
+	<tr>
+		<center>
+		<td >
+			<input  type="checkbox"  value=""  />
+                    <label >
+                      I do accept the <a href="https://www.uniteddigitallearning.com/wp-content/uploads/2013/11/Terms-Conditions.png" ><u>Terms and Conditions</u></a> of your site.
+                    </label>
+		</td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+	<input type="submit" value="submit" class="btn" onClick="login()" /></td><br>
+	</tr>
+	
+	</table>
+<br><br><br>
+<center>
+<button style="height:45px;width:180px"; font-size="20px"><a href="file:///C:/Users/lenovo/Downloads/social-media-website-using-html-css-js-dev/social/loginmain.html?fname=ggdg&lname=gfdf&address=fdgf&gender=femele&mobile=9969420126&email=wghdb%40gamil.com&Country%3A+=India&submit=Submit"><b>Have account?? login now!!</b></a></button></center>
+ 
+
+
+	</div>
+  	 <!-- login box div ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+</form>
+
+  </body>
+  </html>
+  
